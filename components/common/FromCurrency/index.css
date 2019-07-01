@@ -1,0 +1,87 @@
+
+.from-currency.currency-bar {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 10%;
+    /* ^^ because this half of the widget is overlarge so it 
+    can clip into the right half */
+    z-index: 105;
+    transition: 1s var(--bullet-time) top;
+    width: 100%;
+}
+
+.from-currency .currency-bar-divider {
+    margin-bottom: 18px;
+}
+
+.from-currency .above-line {
+    width: 85%; 
+}
+
+.from-currency .address-input {
+    margin-top: 12px;
+}
+
+.from-currency .locked-trade-value-group .trade-value {
+    font-size: 40px;
+}
+
+/* value input */
+.from-currency .value-input {
+    background-color: var(--input-bg);
+    border-radius: 2px;
+    box-shadow: -1px 1px 1px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px var(--whitish);  
+}
+
+.from-currency .value-input.focused {
+    background-color: var(--input-bg-focus);
+}
+
+.from-currency .value-input input {
+    max-width: 5em;
+}
+
+/* transaction details */
+
+.from-currency .currency-transaction-details {
+    background-color: transparent;
+}
+
+@media (min-width: 863px) {
+    .from-currency .locked-trade-value-group {
+        position: absolute;
+        right: 30%;
+        top: -6px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .from-currency .locked-trade-value-group {
+        position: absolute;
+        right: 15%;
+        top: -6px;
+    }
+}
+
+@media (max-width: 863px) {
+    .from-currency .value-input input {
+        font-size: 20px;  
+    }    
+    .from-currency .locked-trade-value-group {
+        position: static;
+    }
+    .locked .from-currency .locked-trade-value-group .trade-value {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .from-currency,
+    .from-currency .value-input {
+        overflow-x: auto;
+        overflow-x: overlay;
+    }    
+}

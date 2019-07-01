@@ -1,0 +1,11 @@
+.settings-page .outreach-text {
+    margin-top: 150px;
+}
+
+
+@media (max-width: 580px) {
+    .settings-page .inner-swoosh-bg.with-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

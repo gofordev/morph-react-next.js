@@ -1,0 +1,33 @@
+.rates-table-cell:not(.down):not(.up) {
+    background: inherit;
+    color: var(--dark);
+    transition: color 1s ease-out;
+}
+
+.rates-table-cell.down {
+    background-image: url(/static/icons/ui/table-down.svg);
+}
+
+.rates-table-cell.up {
+    background-image: url(/static/icons/ui/table-up.svg);
+}
+
+@keyframes move-down {
+    0%   { background-position-y: -69px ; }
+    100% { background-position-y: 62px ; }
+}
+
+@keyframes move-up {
+    0%   { background-position-y: 62px ; }
+    100% { background-position-y: -69px ; }
+}
+  
+.rates-table-cell.animating.down {
+    animation: move-down 1s infinite;
+    color: var(--dark-coral);
+}
+
+.rates-table-cell.animating.up {
+    animation: move-up 1s infinite;
+    color: var(--tealish);
+}

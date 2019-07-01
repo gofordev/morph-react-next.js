@@ -1,0 +1,51 @@
+.rates-table-data tr {
+    position: relative;
+    width: 100%;
+}
+
+
+.rates-table-data tr:first-child {
+    padding-top: 4px;
+}
+
+.rates-table-data tr .rates-table-row-label {
+    text-align: right;
+    padding-right: 12px;
+    color: white;
+}
+
+.rates-table-data tr .rates-table-row-label, 
+.rates-table-data tr td {
+    height: 72px;
+    line-height: 72px;
+    font-size: 16px;
+}
+
+.rates-table-data tr:nth-child(even) {
+    background: var(--whitish);
+}
+
+.rates-table-data tr:nth-child(even) .rates-table-row-label {
+    background: var(--darkish-mauve);
+}
+
+.rates-table-data tr:nth-child(odd) {
+    background: var(--lighter-grey);
+}
+
+.rates-table-data tr:nth-child(odd) .rates-table-row-label {
+    background: var(--mauve);
+}
+
+.rates-table-data tr:first-child .rates-table-row-label {
+    border-top-left-radius: 4px;
+}
+
+.rates-table-data tr:last-child .rates-table-row-label {
+    border-bottom-left-radius: 4px;
+}
+
+.rates-table-data tr:last-child td:last-child,
+.rates-table-data tr:last-child {
+    border-bottom-right-radius: 4px;
+}

@@ -1,0 +1,41 @@
+.api-page .top-section {
+    background-image: url(/static/bg/bg-documentation-page.svg);
+    padding-bottom: 250px;
+}
+
+.api-page .documentation-body {
+    padding-left: 176px;
+    padding-right: 176px;
+}
+
+.api-page .nav-bar a {
+    color: var(--whitish);
+}
+
+.api-page h1.title {
+    color: var(--whitish);
+}
+
+.api-page .intro-block {
+    color: var(--grape-purple);
+}
+
+.api-page .intro-block .intro-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.api-page .intro-block .intro-summary {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.api-page .intro-block .intro-note {
+    margin-top: 24px;
+    border-radius: 4px;
+    background-color: var(--light-mauve-grey);
+    border-left: 4px solid var(--mt-orangey);
+    padding: 18px 12px;
+}

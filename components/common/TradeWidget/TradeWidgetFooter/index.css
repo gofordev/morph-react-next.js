@@ -1,0 +1,51 @@
+.trade-widget-footer {
+  min-height: 95px;
+}
+
+.trade-widget-footer > div {
+  flex: 1;
+  padding: 0 3.75%;
+}
+
+.callout-button.continue {
+  width: 50%;
+}
+
+.continue h4 .svg {
+  height: 60px;
+}
+
+.btnFillUp:not(.in-progress) {
+  overflow: hidden;
+  background-size: 200% 300%;
+  background-position: 76% -24%;
+  background-repeat: no-repeat;
+  transition: background-position .65s ease;
+}
+
+.btnFillUp:not(.in-progress):hover {
+  background-position: 28% 61%;
+  border-color: #902684;
+}
+
+.liquidbg {
+  background-image: url(/static/other_images/Button_hvr_shape.svg);
+}
+
+@media (max-width: 580px) {
+  .trade-widget-footer .split-adder {
+    height: 123px;
+  }
+
+  .trade-widget-footer .bottom-left {
+    display: none;
+  }
+
+  .trade-widget-footer .callout-button {
+    width: 90%;
+  }
+
+  .trade-widget-footer .callout-button h4 {
+    font-size: 24px;   
+  }
+}

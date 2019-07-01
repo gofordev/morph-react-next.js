@@ -1,0 +1,13 @@
+.currency-logo {
+    margin-right: 12px;
+}
+
+.logo-and-name {
+    text-align: left;
+    align-items: center;
+}
+
+.logo-and-name h4 {
+    font-size: 30px;
+    font-weight: 500;  
+}

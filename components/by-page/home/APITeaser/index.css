@@ -1,0 +1,80 @@
+.api-teaser {
+    display: flex;
+    padding-top: 196px;
+    padding-bottom: 210px;
+    align-items: flex-start;
+}
+
+.api-teaser > div {
+    flex: 1;
+}
+
+.api-teaser .api-example {
+    width: 595px;
+}
+
+.api-teaser .title-container {
+    color: var(--whitish);
+    padding-right: 1rem;
+    padding-top: 85px;
+}
+
+.api-teaser .api-preview-container {
+    padding-left: 1rem;
+}
+
+.api-teaser .title-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+.api-teaser .title-container h3 {
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: normal;
+  margin: 30px 0;
+}
+
+.api-teaser .caption {
+    color: var(--whitish);
+    font-size: 20px;
+    line-height: 1.7;
+    margin-top: 8px;
+}
+
+
+@media (max-width: 1024px) {
+    .api-teaser {
+        display: block;
+    }    
+    .api-teaser.with-padding {
+        padding-top: 225px;
+    }
+    .api-teaser .title-container {
+        padding-top: 0;
+    }
+    .api-teaser .api-preview-container {
+        padding-left: 0;
+    }
+
+    .api-teaser .caption {
+        margin-top: 36px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .api-teaser {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 580px) {
+    .api-teaser .api-example {
+        width: 100%;
+    }    
+    .api-teaser.with-padding {
+        padding-top: 305px;
+    }
+}

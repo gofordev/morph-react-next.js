@@ -1,0 +1,104 @@
+.trade-tracker {
+    align-self: flex-end;
+    text-align: center;
+}
+
+.trade-tracker p {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--whitish);
+}
+
+.trade-tracker .kebob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 0;
+    width: 280px;
+}
+
+
+.trade-tracker .circle {
+    flex: 0 1 auto;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid 1px var(--whitish);  
+    background-color: transparent;
+    transition: background-color .5s, border-width .5s;
+    transition-delay: 1s;
+    margin: 0 4px;
+}
+
+.trade-tracker .circle.minor {
+    width: 6px;
+    height: 6px;
+}
+
+.trade-tracker .bar {
+    height: 1px; 
+    background-color: var(--whitish);
+    position: relative;
+}
+
+.trade-tracker .bar.minor {
+    flex: 1;
+}
+/* flex value of major bar gets set in js/inline styling */
+
+.trade-tracker .bar::after {
+    width: 0;
+    height: 3px;
+    background-color: var(--tealish);
+    transition: .75s width linear;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+.bar.rounded-right::after {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.bar.rounded-left::after {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.trade-tracker .bar:first-child, .trade-tracker .bar:last-child {
+    display: none;
+}
+
+.trade-tracker .circle.fulfilled {
+    border-width: 0;
+    background-color: var(--tealish);
+}
+
+.trade-tracker .bar.fulfilled::after {
+    width: 100%;
+}
+
+/* error states */
+.trade-tracker .circle.fulfilled.error {
+    position: relative;
+}
+
+.trade-tracker .circle.fulfilled.error::after {
+    content: "x";
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--whitish);
+}
+
+.trade-tracker .circle.fulfilled.error,
+.trade-tracker .bar.fulfilled.error::after {
+    background-color: var(--error-red);
+}

@@ -1,0 +1,30 @@
+
+.outreach-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.outreach-text .text-container {
+    text-align: right;
+    margin-left: auto;
+}
+
+.outreach-text .text-container p {
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: var(--whitish);
+}
+
+.outreach-text .text-container p:first-child {
+    margin-top: 0;
+}
+
+@media (max-width: 1024px) {
+    .outreach-text .text-container {
+        margin: 100px auto;
+        text-align: center;
+    }
+}

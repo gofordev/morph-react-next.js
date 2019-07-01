@@ -1,0 +1,202 @@
+.to-currency {
+    position: relative;
+    overflow: hidden;
+}
+
+.to-currency.zip-container {
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* end expand collapse stuff */
+.to-currency .currency-bar-padding {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    transition: .5s var(--bullet-time) transform;
+}
+
+.to-currency .currency-bar-padding.zipped {
+    z-index: 0;
+}
+
+.to-currency .exchange-value {
+    margin-right: 6px;
+}
+
+.to-currency .currency-bar-divider {
+    margin-bottom: 12px;
+}
+
+.to-currency .below-line {
+    padding-left: 36px;
+}
+
+.to-currency .below-line-data {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.to-currency .exchange-value-tag {
+    text-transform: uppercase;
+    font-size: 10px;
+    opacity: .5;
+    font-weight: bold;
+}
+
+.to-currency .address-input {
+    margin-top: 16px;
+}
+
+.to-currency .close-button {
+    border-radius: 50%;
+    transition: .25s ease;
+    width: 26px;
+    height: 26px;
+    padding: 4px;
+}
+
+.to-currency .close-button:hover {
+    background-color: var(--dark-coral);
+}
+
+.to-currency .weight {
+    font-size: 10px;
+}
+
+.to-currency .value-input {
+    background: transparent;
+    border: none;
+    padding: 0 0 2px 4px;
+    margin-left: 8px;
+    border-bottom: 1px solid #fff;
+}
+
+.to-currency .value-input input, 
+.to-currency .value-input .units,
+.to-currency .weight {
+    font-weight: 500;
+}
+
+.to-currency .value-input.focused {
+    border-radius: 2px;
+    background-color: rgba(243,243,248,.15);
+}
+
+.to-currency .value-input input {
+    text-align: right;
+    margin-right: 1px;
+    padding-right: 2px;
+    font-size: 20px;
+}
+
+.to-currency .value-input .units {
+    font-size: 12px;
+}
+
+/* transaction-details */
+
+.to-currency .currency-transaction-details {
+    padding-right: 48px;
+    padding-left: 60px;
+}
+
+.to-currency .currency-transaction-details:not(.open) {
+    padding: 0;
+    padding-right: 48px;
+    padding-left: 60px;
+}
+
+.transaction-details-dropdown-arrow {
+    flex: 0 0 auto;
+}
+
+.to-currency:hover .transaction-details-dropdown-arrow {
+    background-color: rgba(60, 60, 92, 0.25);
+}
+
+/* locked styles */
+
+.locked .to-currency .above-line {
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.locked .to-currency .currency-bar-divider {
+    margin-top: 12px;
+}
+
+.locked .to-currency .logo-and-name h4 {
+    width: 6.5em;
+    padding-right: 0;
+}
+
+.locked .locked-weights.locked-only {
+    display: flex;
+    align-items: center;
+}
+
+.locked-weights > span {
+    flex: 0 1 auto;
+    margin-right: .5em;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: bold;  
+}
+
+.locked-weights .weight {
+    margin-right: .25em;
+    font-size: 16px;
+}
+
+@media (max-width: 863px) {    
+
+
+    .to-currency .below-line-data {
+        display: block;
+    }
+    .to-currency .weight-group {
+        margin-top: 16px;
+    }
+    .to-currency .close-button {
+        position: absolute;
+        top: 0px;
+        right: 22px;
+    }
+    .locked .to-currency .locked-trade-value-group {
+        display: none;
+    }
+
+    .locked .to-currency .exchange-value-group {
+        display: block !important;
+    }
+
+    .locked .to-currency .exchange-value-group .exchange-value {
+        font-size: 20px;
+    }
+
+    .locked .to-currency .above-line {
+        display: block;
+        margin-left: 40px;
+    }
+
+    .locked .to-currency .arrow-icon-name {
+        padding: 0;
+    }
+
+    .locked .to-currency .logo-and-name h4 {
+        width: auto;
+        padding-right: 0;
+    }
+
+    .locked .to-currency .transaction-details-dropdown-arrow {
+        position: absolute;
+        right: 2.5em;
+        bottom: 22px;
+    }
+
+    .to-currency .currency-bar-padding {
+        position: relative; 
+        /* for the dropdown arrow, which gets absolute positioning */
+    }
+}

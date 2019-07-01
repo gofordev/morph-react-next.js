@@ -1,0 +1,48 @@
+.nav-bar {
+    flex: 1;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.nav-bar a, .nav-bar .middot {
+    color: var(--grape-purple);
+    font-size: 16px;
+    font-weight: 500;
+    transition: .25s ease all;
+    position: relative;
+}
+
+.nav-bar a:hover {
+    color: var(--mt-orangey);
+}
+
+.nav-bar .middot {
+    margin: 0 12px;
+}
+
+
+.nav-bar a::after {
+    width: 0;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    height: 2px;
+    transform: translateX(-50%);
+    background-color: var(--grape-purple);
+    transition: .25s ease all;
+    content: "";
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+    background-color: var(--mt-orangey);
+}
+
+@media (max-width: 580px) {
+    .nav-bar * {
+        display: none;
+    }
+    .nav-bar .faq {
+        display: inline-block;
+    }
+}

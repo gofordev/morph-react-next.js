@@ -1,0 +1,15 @@
+.value-input {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 16px;
+}
+
+.value-input .value {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.value-input .units {
+    font-size: 10px;
+    font-weight: bold;
+}

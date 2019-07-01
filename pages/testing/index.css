@@ -1,0 +1,37 @@
+.force-trade-page h1 {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+
+.force-trade-page p {
+    line-height: 1.75;
+}
+
+.force-trade-page {
+    padding: 3rem 0;
+    max-width: 900px;
+}
+
+form.force-trade-page label, form.force-trade-page input[type="submit"] {
+    display: block;
+    margin-top: 25px;
+}
+
+form.force-trade-page input[type="number"] {
+    padding: .5rem 1rem;
+    outline: 1px solid #222;
+}
+
+form.force-trade-page input[type="number"]:focus {
+    outline: 2px solid #222;
+}
+
+form.force-trade-page input[type="submit"] {
+    color: white;
+    background: magenta;
+    padding: 2rem 4rem;
+    font-size: 36px;
+    border-radius: 4px;
+    box-shadow: -4px 4px 2px 0 #222;
+}

@@ -1,0 +1,140 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css);
+
+.quickstart-carousel p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--dark-indigo);
+}
+
+.quickstart-carousel p.secondary {
+    color: rgba( 23,20,87, 0.5);
+}
+
+.quickstart-carousel .slick-slide {
+    /* transition: ease-out visibility .5s .5s; */
+}
+
+.quickstart-carousel .slick-slide:not(.slick-current) {
+    visibility: hidden;
+    transition: ease-out visibility .25s .25s;
+
+}
+
+/* custom arrows */
+
+.slick-arrow::before {
+    content: unset;
+}
+
+.slick-arrow {
+    top: unset;
+    bottom: -25px;
+    /* because that's the vertical position of the dots */
+}
+
+.slick-arrow .svg {
+    width: 20px;
+    height: 20px;
+}
+
+.slick-disabled .svg {
+    opacity: .2;
+}
+
+.slick-next {
+    transform: rotate(90deg);
+    right: 30%;
+}
+
+.slick-prev {
+    transform: rotate(-90deg);
+    left: 30%;
+}
+
+/* custom dots */
+
+.morph-carousel-dots li button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid 1px var(--grape-purple);  
+    transition: .5s all ease;
+}
+
+.morph-carousel-dots li.slick-active button {
+    border: none;
+    background-color: var(--grape-purple);  
+}
+
+.morph-carousel-dots li button::before {
+    content: unset;
+}
+
+/* desktop */
+@media (min-width: 863px) {
+    .quickstart-carousel .thumbnail-container {
+        margin-right: 48px;
+    }
+    .quickstart-carousel {
+        margin: 264px auto 0;
+        max-width: 1093px;      
+    }
+}
+
+/* <= tablet */
+@media (max-width: 862px) {
+    .quickstart-carousel {
+        margin-top: 124px;
+    }
+    .quickstart-carousel .step-contents {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 60px;
+    }
+    .quickstart-carousel .thumbnail-container {
+        margin-bottom: 48px;
+        order: 2;
+    }
+    .quickstart-carousel p {
+        font-size: 16px;
+    }
+
+    .quickstart-carousel .slick-dots {
+        top: -82px
+    } 
+    .quickstart-carousel  .slick-arrow {
+        top: -78px;
+    }
+    .slick-next {
+        transform: rotate(90deg) translateY(-160px);
+        right: 50%;
+        /* translates are all crazy bc of the rotation */
+    }
+    .slick-prev {
+        transform: rotate(-90deg) translateY(-160px);
+        left: 50%;
+    }
+}
+
+@media (max-width: 580px) {
+    .slick-next {
+        transform: rotate(90deg);
+        right: 42px;
+        /* translates are all crazy bc of the rotation */
+    }
+    .slick-prev {
+        transform: rotate(-90deg);
+        left: 42px;
+    }
+
+    .quickstart-carousel .step-contents {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .quickstart-carousel .lines {
+        margin: 0 36px;
+    }
+}

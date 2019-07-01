@@ -1,0 +1,111 @@
+.arrow-icon-name {
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 8px 18px 10px 14px;
+    margin-left: -8px;
+    border-bottom-left-radius: 8px;
+    transition: border-radius ease .25s .5s;
+}
+
+.open .arrow-icon-name {
+    border-bottom-left-radius: 0;
+    transition: border-radius ease .25s;
+}
+
+.arrow-icon-name > div {
+    flex: 1;
+}
+
+.arrow-icon-name, .currency-dropdown .dropdown {
+    width: 280px;
+}
+
+.currency-dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.currency-dropdown .dropdown-arrow {
+    margin-right: 12px;
+}
+
+.currency-dropdown .horizontal-line {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dropdown {
+    position: absolute;
+    bottom: 1px;
+    left: -8px;
+    max-height: 350px;
+    transform: translateY(100%);
+    z-index: 101;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: -8px 5px 50px -20px rgba(0, 0, 0, 0.25); 
+    overflow: hidden;
+    transition: .5s var(--bullet-time) max-height;
+}
+
+.dropdown button {
+    display: block;
+    margin: 8px 0;
+    width: 100%;
+    padding-left: 33px;
+    padding-right: 12px;
+}
+
+.dropdown button:not(.non-matching).focused {
+    background: rgba(255,255,255,.2)
+}
+
+.dropdown .horizontal-line {
+    margin-top: 1px;
+    margin-bottom: 12px;
+}
+
+.logo-and-name input, .logo-and-name h4 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;  
+    width: 200px;
+    color: var(--whitish);
+}
+
+.logo-and-name input::placeholder {
+    color: var(--ghost-grey);
+}
+
+.non-matching {
+    opacity: .25;
+}
+
+.locked .logo-and-name input {
+    display: none;
+}
+
+.trade-widget:not(.locked) .logo-and-name .locked-currency {
+    display: none
+}
+
+@media (max-width: 862px) {
+    .currency-dropdown input, 
+    .currency-dropdown p,
+    .currency-dropdown h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 862px) {
+    .arrow-icon-name, .currency-dropdown .dropdown {
+        width: 180px;
+    }
+    .currency-dropdown .currency-logo {
+        height: 18px;
+    }
+    .currency-dropdown .dropdown-arrow {
+        width: 8px;
+    }
+}

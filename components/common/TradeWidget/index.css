@@ -1,0 +1,147 @@
+@media (min-width: 1440px) {
+    .trade-widget-container .trade-widget {
+        margin: 0 auto;
+    }    
+}
+
+.trade-widget {
+    border-radius: 8px;
+    box-shadow: -10px 12px 50px 0 rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(277deg, var(--dark-indigo), var(--grape-purple-two));
+    position: relative;
+    max-width: 1093px;
+    margin: 0 auto;
+    display: block;
+    transition: max-height ease .5s;
+    transform: translateZ(0);
+}
+
+.trade-widget.loading {
+    height: 420px;
+    max-height: 420px;
+}
+
+.trade-widget .loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+}
+
+.trade-widget-halves {
+    display: flex;
+}
+
+.trade-widget-half {
+    color: var(--whitish);
+    flex: 1;
+}
+
+.trade-widget:not(.locked) .transaction-details-dropdown-arrow {
+    display: none;
+}
+
+/* .currency-bar styles, affect fromCurrency and toCurrency */
+
+.currency-bar .above-line {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.currency-bar-padding {
+    padding: 0 7.5%;
+}
+
+.exchange-value, .trade-value {
+    font-size: 24px;
+}
+
+.exchange-value-units {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.locked-trade-value-group {
+    display: none;
+}
+
+/* "locked" state */
+
+.trade-widget:not(.locked) .locked-only {
+    display: none;
+}
+
+.locked .locked-only {
+    display: unset;
+}
+
+.locked .unlocked-only {
+    display: none;
+}
+
+.locked .address-input,
+.locked .dropdown,
+.locked .currency-dropdown .dropdown-arrow,
+.locked .value-input,
+.locked .close-button,
+.locked .currency-bar-divider,
+.locked .to-currency .exchange-value-group,
+.locked .to-currency .exchange-value-units,
+.locked .from-currency .selected-value-units,
+.locked .from-currency .selected-value {
+    display: none;
+}
+
+.locked .locked-trade-value-group {
+    display: unset;
+}
+
+.locked .trade-widget-halves * {
+    cursor: unset;
+}
+
+.locked .currency-bar {
+    cursor: pointer; /* bc activates accordion */
+}
+
+.locked .currency-bar .arrow-icon-name, 
+.locked .currency-bar .currency-dropdown {
+    width: unset;
+}
+
+.locked-trade-value-group .trade-value {
+    margin: 0;
+}
+
+.currency-bar .value-caption {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    opacity: .5;
+    color: var(--whitish);
+}
+
+
+/* <= tablet */
+@media (max-width: 862px) {
+    .trade-widget-container.with-padding {
+        padding: 0;
+    }
+    .trade-widget {
+        border-radius: 0;
+    }
+}
+
+/* horizontal "rules" */
+@media (max-width: 862px) {
+    .locked .from-currency .currency-bar-divider {
+        display: block;
+    }
+}
+
+@media (max-width: 580px) {
+    .locked .currency-bar-divider {
+        display: block;
+    }
+}

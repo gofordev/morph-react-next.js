@@ -1,0 +1,172 @@
+footer {
+    background-color: var(--grape-purple);
+}
+
+footer .swoosh {
+    background-image: url(/static/bg/bg-footer.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 505%;
+    height: 100px;
+}
+
+footer .content {
+    background-color: var(--dark-indigo);
+    padding-bottom: 36px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .columns-container {
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+footer ul li {
+    margin: 0;
+}
+
+
+footer .middle {
+    text-align: center;
+}
+
+footer .logo-text {
+    font-size: 36px;
+    text-align: center;
+    color: var(--whitish);
+}
+
+.copyright {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 12px;
+    color: var(--whitish);
+}
+
+.copyright a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: var(--whitish);
+}
+
+/* all this for the hover effects */
+
+footer a {
+  font-size: 20px;
+  line-height: 50px;
+  position: relative;
+  transition: all .25s ease;
+}
+
+footer a:hover {
+    transition: none;
+}
+
+footer a::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .25s ease;
+}
+
+footer .left {
+    text-align: right;
+}
+
+footer .left a {
+    text-align: right;
+    color: var(--whitish);
+    font-weight: bold;
+}
+
+footer .left a::after {
+    right: -12px;
+}
+
+footer .left a:hover {
+    color: var(--mt-orangey);
+}
+
+footer a:hover::after {
+    height: 100%;
+}
+
+footer .left a:hover::after {
+    background-color: var(--mt-orangey);
+    right: -12px;
+}
+
+footer .logo-image {
+    margin-bottom: 24px;
+}
+
+
+footer .right a {
+    color: var(--mango);
+    font-weight: bold;
+}
+
+footer .right a::after {
+    left: -12px;
+}
+
+footer .right a:not(.nohover):hover {
+    color: var(--purply);
+}
+
+footer .right a:not(.nohover):hover::after {
+    background-color: var(--purply);
+    left: -12px;
+}
+
+@media (min-width: 863px) {
+    footer .logo-container {
+        display: none;
+    }
+}
+
+@media (max-width: 862px) {
+    footer .logo-container {
+        display: block;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    footer .middle {
+        display: none;
+    }
+}
+
+/* >= tablet */
+@media (min-width: 581px) {
+    footer .swoosh {
+        background-size: cover;
+        height: 200px
+        /* ios browsers treat background size entirely differently */
+    }
+}
+
+
+@media (max-width: 580px) {
+    footer .swoosh {
+        background-size: 100% 270%;
+        /* ios browsers treat background size entirely differently */
+    }
+    footer .columns-container {
+        display: block;
+    }
+    footer .columns-container .column  {
+        text-align: center;
+    }
+    footer .columns-container .right {
+        margin-top: 50px;
+    }
+    footer .copyright a {
+        display: block;
+    }
+}

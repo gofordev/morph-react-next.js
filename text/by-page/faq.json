@@ -1,0 +1,65 @@
+{
+  "title": "FAQ",
+  "subtitle": "You've got questions, we've got answers",
+  "question_blocks": [
+    {
+      "title": "What is MorphToken?",
+      "body_lines": [
+        "MorphToken takes one cryptocurrency and outputs one or more cryptocurrencies. It operates without user accounts, allowing to quickly exchange multiple assets. Scenarios:",
+        "- Convert to one asset, e.g. send XMR to receive BTC.",
+        "- Convert to multiple assets, e.g. send LTC to receive 80% in BTC and 20% in XMR.",
+        "- Forward without conversion, e.g. send ETH to receive 50% in ETH for address 1 and another 50% in ETH for address 2.",
+        "Currently, the cryptocurrencies accepted are: Bitcoin (BTC), Ethereum (ETH), BitcoinCash (BCH), Litecoin (LTC), Dash (DASH), Monero (XMR)."
+      ]
+    },
+    {
+      "title": "What are the fees?",
+      "body_lines": [
+        "MorphToken charges a flat fee for the output network and a dynamic service fee for trading assets.",
+        "### Network Flat Fee",
+        "<FeesTable />",
+        "These fees are subject to change, in particular during network congestion.",
+        "### Service Fee",
+        "When a trade is started the seen rate is always displayed below each selected asset. The final rate will depend on when your deposit gets confirmed, which causes MorphToken to perform the asset exchange. Compared to the best bid/ask price from a regular exchange, it's expected that the service fee stays within 0.5% to 0.7% of that.",
+        "If the request involves a single asset, e.g. forward bitcoin to one or more bitcoin addresses, a 0.25% fee is used (NOTE: changed from 0.1% to 0.25% November 12, 2018).",
+        "### Example",
+        "![](/static/other_images/trade_anatomy.png)",
+        "A request for trading XMR for BTC was created. When XMR is sent to the deposit address given by MorphToken (not shown above), 100% of it will be converted to BTC.",
+        "When the request was created, a rate of 1 XMR = 0.0161552 BTC was seen. Assuming the final rate is the same, depositing 1 XMR would give 0.0161552 - 0.001 BTC."
+      ]
+    },
+    {
+      "title": "How many confirmations are required?",
+      "body_lines": [
+        "For now every token is exchanged after the deposit receives one confirmation."
+      ]
+    },
+    {
+      "title": "What happens if I send less than the minimum amount?",
+      "body_lines": [
+        "When a trade starts the minimum amount accepted is displayed, if you send less than that a refund will occur later in the day if the amount is above the network fee. Amounts below the network fee are not refunded.",
+        "Only the first deposit is accepted for a trade."
+      ]
+    },
+    {
+      "title": "What happens if I send more than the maximum amount?",
+      "body_lines": [
+        "Usually, amounts above the maximum will be refunded as soon as possible.",
+        "But if you happen to send many times over the maximum amount we will wait for an email to start the refund. Refunds for these cases require manual signatures and might take long to be processed."
+      ]
+    },
+    {
+      "title": "How long can I wait to send funds?",
+      "body_lines": [
+        "A trade without a deposit is canceled automatically 2 days after its creation.",
+        "Said that, it's recommended to send as soon as the trade starts so the seen rate and final rate are likely to be close and the amounts received will match the initial expectation."
+      ]
+    },
+    {
+      "title": "Still have a question?",
+      "body_lines": [
+        "[Email Us](mailto:contact@morphtoken.com) with your question and we’ll get back to you as soon as we can."
+      ]
+    }
+  ]
+}

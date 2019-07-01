@@ -1,0 +1,42 @@
+.quickstart-guide {
+    background-image: url(/static/bg/bg-quickstart.svg);
+    background-size: 100% auto;
+    margin-bottom: 64px;
+}
+
+.quickstart-guide h2 {
+    text-align: right;
+    font-size: 36px;
+    color: var(--whitish);
+    padding-top: 10vw;
+    font-weight: bold;
+}
+
+.quickstart-guide .quickstart-caption {
+    color: var(--dark-indigo);
+    margin-top: 36px;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .quickstart-guide h2 {
+        padding-top: 9.5vw;
+        margin-right: 8%;
+    }
+}
+
+@media (max-width: 862px) {
+    .quickstart-guide h2.with-padding {
+        color: var(--blueberry);
+        padding: 240px 0 0 0;
+        text-align: left;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 580px) {
+    .quickstart-guide h2.with-padding {
+        margin-left: 36px;
+    }
+}

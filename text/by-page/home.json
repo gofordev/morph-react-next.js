@@ -1,0 +1,60 @@
+{
+  "add_split_button": "Add Split",
+  "api_teaser": {
+    "title": "morph by api",
+    "subtitle": "Easily integrate MorphToken into your digital product. Here is an example for converting Ethereum to Bitcoin."
+  },
+  "quickstart_guide": {
+    "title": "quickstart guide",
+    "caption": "For more information and limits see [FAQ](/faq).",
+    "steps": [
+      {
+        "lines": [
+          {
+            "primary": "Choose asset to convert FROM and up to six assets to convert TO. (Click “Add Split” to add additional assets)."
+          },
+          {
+            "primary": "Define desired “Weights” to set how your assets will be divided."
+          },
+          {
+            "primary": "When ready, click “Continue” to add addresses before starting the trade."
+          }
+        ]
+      },
+      {
+        "lines": [
+          {
+            "primary": "At this point you may still change assets and weights if desired."
+          },
+          {
+            "primary": "When ready to continue, fill in your addresses and click *Start Trade*"
+          }
+        ]
+      },
+      {
+        "lines": [
+          {
+            "primary": "Now send currency (defined on the left), to the deposit address at the bottom."
+          },
+          {
+            "secondary": "Deposits are detected instantly and conversion happens immediately after confirmation."
+          },
+          {
+            "secondary": "If you experience any issue, please [Contact Us](/contact-us) and include the *Morph ID* displayed at the top (#PENMMGXL!BY in this example)."
+          },
+          {
+            "secondary": "Only one deposit is accepted per trade. Additional deposits are refunded, see [FAQ](/faq) for more info."
+          }
+        ]
+      }
+    ]
+  },
+  "rates_table": {
+    "subtitle": "live",
+    "title": "conversion rates"
+  },
+  "subtitle_left": "Safely split one digital asset into many others.",
+  "subtitle_right": "Or simply convert one to another.",
+  "title_left": "Cryptocurrency.",
+  "title_right": "Simplified."
+}

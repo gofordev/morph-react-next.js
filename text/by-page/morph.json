@@ -1,0 +1,40 @@
+{
+  "title": "Morph Trade",
+  "subtitle": "Select assets and weights, and enter your receiving addresses",
+  "deposit_footer": {
+    "headline": {
+      "initial": "Send deposit to the address below to continue trade",
+      "after_deposit": "Deposit received, waiting for confirmation"
+    },
+    "notes": [
+      "Rates are not final until trade has occurred.",
+      "If deposit is not confirmed within 48 hours, transaction will expire. No action required.",
+      "This trade page can be accessed at anytime by entering the Morph ID on the trade lookup page: [morphtoken.com/TradeLookup](morphtoken.com/TradeLookup)."
+    ],
+    "duplicate_button": {
+      "title": "duplicate trade",
+      "subtitle": "saves split values and receiving addresses"
+    }
+  },
+  "trade_widget": {
+    "heading_left": "convert from",
+    "heading_right": "to",
+    "tracker_stages": {
+      "NOT_STARTED": "Add receiving addresses",
+      "WAITING_FOR_DEPOSIT": "Waiting for deposit",
+      "WAITING_FOR_DEPOSIT_CONFIRMATION": "Waiting for deposit confirmation",
+      "PROCESSING": "Deposit confirmed, preparing trades",
+      "TRADING": "Trading",
+      "TRADED": "Finished trading. Completion pending",
+      "COMPLETE_NO_TXID": "Finalizing trade",
+      "COMPLETE_WITH_TXID": "Trade complete"
+    },
+    "error_stages": {
+      "PROCESSING_REFUND": "Deposit outside limits: processing refund",
+      "COMPLETE_WITH_REFUND": "Deposit outside limits: refund issued",
+      "COMPLETE_WITHOUT_REFUND": "Deposit outside limits and below transaction fee: no refund issued",
+      "CANCELED": "Trade canceled due to an unexpected issue",
+      "EXPIRED": "Trade expired: deposit not confirmed within expiry window"
+    }
+  }
+}

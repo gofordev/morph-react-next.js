@@ -1,0 +1,103 @@
+.rates-table, thead, tbody {
+    display: block;
+}
+
+.rates-table-container {
+    width: 100%;
+    align-self: flex-end;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    background: var(--grape-purple);
+    text-align: right;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.rates-table-container > * {
+    flex: 1;
+}
+
+.table-wrapper {
+    max-width: 100%;
+}
+
+@media (min-width: 1440px) {
+    .rates-table-container {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .rates-table-container.with-padding {
+        padding-left: 92px;
+        padding-right: 0;
+    }
+
+    .rates-table-title-container {
+        padding-right: 36px;
+    }
+}
+
+@media (max-width: 862px) {
+    .rates-table-container {
+        padding-top: 200px;
+        padding-right: 0;
+    }
+}
+
+.rates-table-title-container {
+    text-transform: uppercase;
+    transform: translateY(-40%);
+    /* ^^ because this needs to tuck up under 
+    the curve of the swoosh above it */
+}
+
+.rates-table-title-container h2 {
+    text-shadow: -10px 15px 25px rgba(0, 0, 0, 0.2);
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2.6px;
+    color: #ffffff;
+    max-width: 350px;
+    text-align: right;
+    display: inline-block;
+}
+
+.rates-table-title-container h3 {
+    text-shadow: -10px 15px 25px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    color: #fbaf32;
+    text-align: right;
+}
+
+.rates-table {
+    overflow-x: auto;
+    overflow-x: overlay;
+    max-width: 100%;
+    padding-left: 6px;
+}
+
+.rates-table-data {
+    width: 890px;
+}
+
+.rates-table tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rates-table td {
+    font-size: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.rates-table th {
+    text-align: center;
+    flex: 1;
+}

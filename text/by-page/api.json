@@ -1,0 +1,57 @@
+{
+  "title": "API Documentation",
+  "introduction": {
+    "heading": "Introduction",
+    "summary": "MorphToken provides an HTTP API for starting trades and recommends using its Websocket API for tracking the latest rates and trade updates.",
+    "note": "If you're using MorphToken commercially, or planning to, it's recommended that you reach out to us so we can lift limits and better serve your product."
+  },
+  "routes": [
+    {
+      "method": "post",
+      "endpoint": "/morph",
+      "parameters": {
+        "input": "Input object",
+        "output": "List of output objects"
+      },
+      "parameter_tables": [
+        {
+          "title": "Input object",
+          "rows": [
+            {
+              "Key": "asset",
+              "Type": "string",
+              "Description": "Asset to be used for deposit, one of: \"BTC\", \"ETH\", \"BCH\", \"LTC\", \"DASH\", \"XMR\""
+            },
+            {
+              "Key": "refund",
+              "Type": "string",
+              "Description": "Refund address to be used in case of issues"
+            }
+          ]
+        },
+        {
+          "title": "Output object",
+          "rows": [
+            {
+              "Key": "asset",
+              "Type": "string",
+              "Description": "Asset to be used for this output, one of: \"BTC\", \"ETH\", \"BCH\", \"LTC\", \"DASH\", \"XMR\""
+            },
+            {
+              "Key": "weight",
+              "Type": "integer",
+              "Description": "A number between 1 (0.01%) and 10000 (100.00%) representing how much of the input deposit should be used for this output"
+            },
+            {
+              "Key": "address",
+              "Type": "string",
+              "Description": "Output address to be used during withdraw"
+            }
+          ]
+        }
+      ],
+      "note": "For Monero addresses it's recommended to always use integrated addresses, but if you want to specify a payment id then the address can be formatted as address_paymentid.",
+      "example_request": "$ curl https://api.morphtoken.com/morph \\ \n-X POST -H \"Content-Type: application/json\" -d '{\n\t\"input\": {\n\t\t\"asset\": \"ETH\",\n\t\t\"refund\": \"0x4d2022abbda11a510ee109ea8a1446ed5fd8210d\"\n\t},\n\t\"output\": [{\n\t\t\"asset\": \"BTC\",\n\t\t\"weight\": 10000,\n\t\t\"address\": \"3CuWxAYh8niCuhMfb5fXN5NjasiY54E8cc\"\n\t}]\n\t}"
+    }
+  ]
+}

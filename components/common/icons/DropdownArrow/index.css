@@ -1,0 +1,10 @@
+.dropdown-arrow {
+    display: block;
+    width: 26px;
+    height: 26px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all .25s ease;
+    text-align: center;
+}

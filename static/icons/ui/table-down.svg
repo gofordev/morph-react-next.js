@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="74" viewBox="0 0 40 74">
+    <defs>
+        <filter id="a" width="145%" height="153.6%" x="-22.5%" y="-26.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1.8369702e-16 3"/>
+        </filter>
+        <filter id="b" width="130%" height="135.7%" x="-15%" y="-17.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1.2246468e-16 2"/>
+        </filter>
+    </defs>
+    <g fill="#F1B0A7" fill-rule="nonzero" opacity=".75">
+        <path d="M0 16.2V33l20-16.8L40 33V16.2L20-.6z" filter="url(#a)" transform="rotate(-180 20 20.7)"/>
+        <path d="M0 43.2V60l20-16.8L40 60V43.2L20 26.4z" filter="url(#b)" transform="rotate(-180 20 47.7)"/>
+        <path d="M40 26.2V9.4L20 26.2 0 9.4v16.8L20 43z"/>
+        <path d="M40 53.2V36.4L20 53.2 0 36.4v16.8L20 70z"/>
+    </g>
+</svg>

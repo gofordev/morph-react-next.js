@@ -1,0 +1,46 @@
+
+.trade-widget-half.left {
+    position: relative;
+}
+
+.tw-left-clipping {
+    height: 100%;
+    background-image: linear-gradient(to left, #2d1247, #931685);
+    border: 18px solid rgba(65, 67, 69, 0.1);
+    border-right: none;
+    border-left: none;
+    clip-path: polygon(0% 0%, 96.6% 0%, 100% 50%, 95.6% 100%, 0% 100%);
+    z-index: 1;
+    position: relative;
+    transition: 1s ease opacity;
+    opacity: 1;
+}
+
+.tw-left-clipping.complete {
+    border-image-source: linear-gradient(to left, rgba(35, 37, 38, 0), rgba(65, 67, 69, 0.1));
+    background-image: linear-gradient(to left, #2d1247, var(--tealish));
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.deposit-received .tw-left-clipping {
+    opacity: 0;
+}
+
+.deposit-received .tw-left-clipping.complete {
+    opacity: 1;
+}
+
+
+.trade-widget-half.left .trade-widget-heading {
+    text-align: left;
+}
+
+.trade-widget-half.left {
+    position: relative;
+    margin-right: -2.25%;
+    flex: 0 0 52.25%; /* to accommodate the margin, to acommodate the v-shape */
+}

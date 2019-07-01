@@ -1,0 +1,41 @@
+
+.currency-transaction-details {
+    transition: .25s ease max-height, .25s ease padding;
+    transform: translateZ(0);
+    overflow: hidden;
+    background-color: rgba(28,22,34,.25);
+}
+
+.currency-transaction-details .field-and-value {
+    opacity: .75;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.currency-transaction-details .field {
+    text-align: right;
+    text-transform: uppercase;
+    /* display: inline-block; */
+    font-size: 10px;
+    font-weight: bold;
+    flex-basis: 90px;
+    margin-right: 24px;
+    flex: 3;
+}
+
+.currency-transaction-details .value {
+    /* display: inline-block; */
+    font-size: 14px;
+    text-align: left;
+    flex: 10;
+}
+
+@media (max-width: 862px) {
+    .currency-transaction-details .field-and-value {
+        display: block;
+    }
+
+    .currency-transaction-details .field-and-value * {
+        text-align: left;
+    }
+}

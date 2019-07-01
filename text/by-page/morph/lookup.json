@@ -1,0 +1,13 @@
+{
+  "title": "Morph Trade Lookup",
+  "subtitle": "Enter Morph ID or Deposit address to find a past trade",
+  "table_title": "Recent Trades",
+  "table_fields": ["Morph ID", "Created At"],
+  "no_local_trades_message": "No recent trades found",
+  "not_found_message": "Trade not found",
+  "table_footer": {
+    "note": "Recent trades are being saved locally and populated above. Click below to clear stored trades, to stop storing recent trades locally go to the [Settings](/settings) page",
+    "clear_button": "Clear locally stored trades",
+    "recent_trades_button": "View recent trades"
+  }
+}

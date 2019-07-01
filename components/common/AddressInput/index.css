@@ -1,0 +1,11 @@
+.address-input {
+    display: block;
+    max-width: 100%;
+    border: solid 0.5px var(--whitish);
+    font-size: 12px;
+    padding: 8px;
+}
+
+.currency-bar .address-input {
+    width: 100%;
+}

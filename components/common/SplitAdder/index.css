@@ -1,0 +1,52 @@
+.trade-widget-footer .split-adder {
+    text-align: right;
+    height: 95px;
+    background-color: var(--darkish-purple);
+    padding-top: 15px;
+    border-bottom-right-radius: 8px;
+    transition: background-color .5s ease;
+}
+
+.split-adder button * {
+    opacity: .75;
+    transition: opacity .25s ease;
+}
+
+.split-adder button:hover * {
+    opacity: 1;
+}
+
+.split-adder button .svg {
+    background-color: transparent;
+    transition: all .25s ease;
+}
+
+.split-adder button:hover .svg {
+    border-radius: 50%;
+    background-color: rgba(243,243,248,.25)
+}
+
+.split-adder .horizontal-line {
+    margin: 12px 0;
+    display: block;
+}
+
+.add-split {
+    color: var(--whitish);
+}
+
+.split-adder button {
+    width: 100%;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.split-adder .svg {
+    margin-left: 12px;
+    padding: 4px;
+}
+
+.split-adder .btn-group {
+    justify-content: flex-end;
+}
+

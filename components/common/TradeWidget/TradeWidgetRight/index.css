@@ -1,0 +1,8 @@
+.trade-widget-half.right {
+    width: 50%;
+}
+
+.to-currencies {
+    display: flex;
+    flex-direction: column;
+}

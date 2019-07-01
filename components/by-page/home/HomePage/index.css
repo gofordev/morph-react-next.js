@@ -1,0 +1,74 @@
+.home-page {
+    overflow: hidden;
+}
+
+.home-page .top-section {
+    background-image: url(/static/bg/bg-swoosh-top.svg);
+    padding-bottom: 72px;
+}
+
+@media (max-width: 862px) {
+    .home-page .top-section {
+        background-image: unset;
+        background-color: var(--whitish);
+    }
+}
+
+.home-page .trade-widget-container {
+    background-image: url(/static/bg/bg-middle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-page .api-footer-wrapper {
+    background-image: url(/static/bg/bg-api.svg);
+    background-size: cover;
+}
+
+.home-page .outreach-text .text-container p {
+    color: var(--grape-purple);
+}
+
+.home-page .outreach-text {
+    padding-top: 250px;
+}
+
+.home-page .footer {
+    background-color: transparent;
+}
+
+@media (min-width: 863px) {
+    .home-page .outreach-text {
+        margin-top: -4px;
+        margin-right: -2px;
+        /* annoying gaps, cause could not be found in a reasonable amount of time. */
+        padding-bottom: 50vw;
+        background-image: url(/static/bg/bg-bottom.svg);
+        height: 62vw;
+        /* ^^ sigh, because this height has to scale with the shape of the svg on v large screens */
+    }
+}
+
+@media (min-width: 863px) {
+    .home-page .api-footer-wrapper {
+        background-size: cover;
+        width: 104%;
+        margin-left: -2%;
+        background-image: url(/static/bg/bg-api.svg);
+    }
+}
+
+@media (max-width: 862px) {
+    .home-page .api-footer-wrapper {
+        background-size: 115% 100%;
+    }
+    .home-page .outreach-text {
+        background: var(--grape-purple) url(/static/bg/bg-under-widget-mobile.svg);
+        background-size: cover;
+        margin-bottom: 4px;
+    }
+
+    .home-page .outreach-text .text-container {
+        min-height: 200px;
+    }
+}

@@ -1,0 +1,84 @@
+/* general table styles */
+
+.saved-address-table .row {
+    padding: 24px 60px;
+}
+
+.saved-address-table .row:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.saved-address-table .header {
+    background-color: var(--grape-purple-three);
+    color: var(--whitish);
+    font-weight: 500;
+    text-transform: uppercase;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    letter-spacing: normal;
+}
+
+.saved-address-table .cell {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.saved-address-table .currency {
+    width: 37.5%;
+}
+
+.saved-address-table .address {
+    width: 62.5%;
+}
+
+
+/* rows */
+
+.saved-address-table .logo-and-name h4 {
+    font-size: 30px;
+}
+
+.saved-address-table .address-input {
+    padding: 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+@media (max-width: 862px) {
+    .saved-address-table .row {
+        padding: 24px 36px;
+    }
+    .saved-address-table .currency {
+        width: 45%;
+    }
+    .saved-address-table .address {
+        width: 55%;
+    }
+    .saved-address-table .logo-and-name h4 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 580px) {
+    .saved-address-table .cell {
+        width: 100%;
+        display: block;
+    }
+    .saved-address-table .currency {
+        margin-bottom: 24px;
+    }
+    .saved-address-table .header {
+        height: 36px;
+        padding: 0;
+        border-radius: 0;
+    }
+    .saved-address-table .header * {
+        font-size: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+    .saved-address-table .row:last-child {
+        border-radius: 0;
+    }
+}

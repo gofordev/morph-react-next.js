@@ -1,0 +1,39 @@
+.morph-page {
+    color: var(--blueberry);
+}
+
+@media (min-width: 1440px) {
+    .morph-page .inner-swoosh-bg {
+        min-height: 80vw;
+    }
+}
+
+.morph-page .outreach-text {
+    margin-top: 0;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.morph-page .outreach-text .text-container {
+    margin-top: 0;
+}
+
+.morph-page .outreach-text .text-container p {
+    color: var(--whitish);
+}
+
+@media (max-width: 1024px) {
+    .morph-page .outreach-text {
+        display: block;
+        text-align: center;
+    }
+
+    .morph-page .outreach-text .text-container {
+        text-align: center;
+    }
+
+    .morph-page .outreach-text .new-trade-button {
+        display: block;
+        margin: 0 auto 100px auto;
+    }
+}

@@ -1,0 +1,239 @@
+.lookup-table {
+    border-radius: 8px;
+    box-shadow: 10px 2px 25px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(281deg, var(--dark-indigo), var(--grape-purple-two));
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.lookup-table-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.lookup-table .title-container {
+    color: var(--whitish);
+    margin-bottom: 24px;
+}
+
+.lookup-table .title {
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-size: 36px;
+}
+
+.lookup-table .subtitle {
+    font-size: 16px;
+}
+
+.lookup-table .search-container {
+    margin: 32px 0;
+}
+
+.search-container .morph-input {
+    flex: 1;
+    margin-right: 28px;
+    font-size: 24px;
+    padding: 18px 24px;
+}
+
+.search-container .search-button {
+    flex: 0 0 186px;
+}
+
+.search-button .button-title {
+    font-size: 24px;
+    letter-spacing: 1.7;
+    text-transform: uppercase;
+}
+
+/* table heading */
+
+.lookup-table .search-results-header.lookup-table-padding {
+    padding-top: 0px;
+    color: var(--whitish);
+}
+
+.lookup-table .table-title {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.lookup-table .fields.row {
+    background-color: transparent;
+    padding: 0;
+    margin: 18px 0 18px;
+}
+
+.lookup-table .fields .cell {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* rows */
+
+.lookup-table .row {
+    padding: 36px 60px;
+    background-color: var(--darkish-purple);
+    justify-content: space-between;
+    align-items: center;
+    transition: .25s ease all;
+}
+
+.lookup-table .row.not-found-bar {
+    background-color: var(--error-red);
+}
+
+.lookup-table .row.no-local-trades-bar p,
+.lookup-table .row.not-found-bar p {
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.lookup-table .row:nth-child(even) {
+    background-color: var(--grape-purple-two);
+}
+
+/* row active state */
+.lookup-table .results .row:not(.not-found-bar):hover {
+    background-color: color(var(--darkish-purple) shade(10%));
+    cursor: pointer;
+}
+
+.lookup-table .results .row:hover .dropdown-arrow {
+    background-color: rgba(243,243,243,.15);
+}
+
+.lookup-table .results .row:hover .morph-id::after {
+    width: 100%;
+}
+
+.lookup-table .results .row:nth-child(even):hover {
+    background-color: color(var(--grape-purple-two) shade(10%));
+}
+
+/* cells  */
+
+.lookup-table .cell {
+    color: var(--whitish);
+    flex: 1;
+    padding: 0 8px;
+}
+
+.lookup-table .created-at {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.lookup-table .morph-id {
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    word-break: break-all;
+    position: relative;
+    display: inline-block;
+}
+
+.lookup-table .morph-id::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .25s ease;
+    background-color: var(--whitish);
+}
+
+
+.lookup-table .cell.dropdown-arrow {
+    flex: 0 0 20px;
+    margin-right: -4px;
+}
+
+/* footer */
+
+.lookup-table .lookup-table-footer {
+    padding-top: 42px;
+}
+
+.lookup-table .lookup-table-footer .note {
+    margin-bottom: 30px;
+    color: var(--whitish);
+    font-size: 16px;
+}
+
+.lookup-table .lookup-table-footer .note a {
+    color: unset;
+    font-weight: unset;
+}
+
+.lookup-table .lookup-table-footer .callout-button {
+    font-size: 16px;
+    padding: 8px 12px;
+    letter-spacing: normal
+}
+
+@media (max-width: 1024px) {
+
+    .lookup-table {
+        padding-top: 36px;
+        padding-bottom: 36px;
+        border-radius: 0;
+    }
+
+    .lookup-table .button-title {
+        font-size: 16px;
+    }
+
+    .lookup-table .search-container input {
+        font-size: 16px;
+    }
+
+    .lookup-table .lookup-table-padding {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .lookup-table .row {
+        padding: 18px 24px;
+    }
+
+    .search-container .morph-input {
+        margin-right: 12px;
+    }
+    
+}
+
+@media (max-width: 580px) {
+    .lookup-table .search-container {
+        display: block;
+    }
+
+    .lookup-table .search-input {
+        width: 100%;
+    }
+
+    .lookup-table .search-button {
+        display: block;
+        margin-left: auto;
+    }
+
+    .lookup-table .search-input {
+        margin-bottom: 24px;
+    }
+
+    .lookup-table .search-input::placeholder {
+        font-size: 16px;
+    }
+
+    .lookup-table .morph-id.cell::after {
+        display: none;
+    }
+}

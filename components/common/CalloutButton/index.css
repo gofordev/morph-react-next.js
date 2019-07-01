@@ -1,0 +1,62 @@
+.callout-button {
+    background-color: var(--warm-purple-two);
+    color: #f3f3f8;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 18px 24px;
+    max-height: 72px;
+  }
+
+.callout-button:disabled,
+.callout-button.primary-action:disabled {
+  background-color: var(--grayish-purple);
+  cursor: unset;
+}
+
+  .callout-button.primary-action {
+    background-color: var(--mt-orangey);
+}
+  .callout-button h4 {
+    font-size: inherit;
+  }
+
+  .callout-button .subtitle {
+    font-size: 10px;
+    color: var(--whitish);
+  }
+
+  .callout-button.in-progress {
+    background-color: var(--warm-purple-two);
+    transition: none;
+    padding: 12px 0 0 0 ;
+    background-image: unset;
+  }
+
+  .callout-button.in-progress img {
+    max-height: 108px;
+    vertical-align: bottom;
+  }
+
+  /* position it hanging off the bottom when rendered in trade widget */
+  .trade-widget .callout-button {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%,50%);
+      width: 85%;
+  }
+
+  @media (max-width: 768px) {
+    .callout-button h4 {
+      font-size: 24px;
+    }
+    .callout-button p {
+      font-size: 10px;
+      font-stretch: normal;
+      letter-spacing: 1.7px;
+
+    }
+  }

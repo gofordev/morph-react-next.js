@@ -1,0 +1,12 @@
+{
+    "morph_logo": "MorphToken",
+    "new_trade_button": {
+        "title": "start a new trade"
+    },
+    "outreach_text": {
+        "lines": [
+            "Learn more about our [Referral Program](#).",
+            "For general questions go to the [FAQ](/faq) or [Contact Us](/contact-us)."
+        ]
+    }
+}

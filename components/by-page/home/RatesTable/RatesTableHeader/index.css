@@ -1,0 +1,33 @@
+.rates-table-header {
+    width: 902px;
+    height: 62px;
+    background: #5d256e;
+    border-radius: 4px;
+    margin-left: -6px;
+}
+
+.rates-table-header tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rates-table-field {
+    margin-top: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.rates-table-field .currency-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--whitish);
+}
+
+.rates-table-field .currency-abbrev {
+    font-size: 10px;
+    font-weight: 200;
+    color: var(--whitish);
+    opacity: .6;
+}

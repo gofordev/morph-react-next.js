@@ -1,0 +1,51 @@
+.api-example * {
+    color: var(--whitish);
+}
+
+.api-example pre {
+    background-color: var(--grape-purple-three);
+    padding: 16px 32px;
+    overflow: auto;
+    overflow: overlay;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+.api-example pre, 
+.api-example a.code-tab,
+.api-example .view-result {
+    border-radius: 4px;
+}
+
+.api-example pre {
+    border-top-left-radius: 0;
+}
+
+.api-example a.code-tab {
+    display: inline-block;
+    background-color: var(--heather);
+    padding: 6px 16px;
+    padding-bottom: 2px;
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0; 
+    margin-right: 6px;
+}
+
+.api-example a.code-tab.active {
+    background-color: var(--grape-purple-three);
+}
+
+.api-example .view-result {
+    border-radius: 4px;
+    background-color: var(--dark);
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.api-example pre.result {
+    margin: 8px 0;
+}

@@ -1,0 +1,128 @@
+.trade-widget-header {
+  padding: 82px 4.2% 30px 4.2%;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.trade-widget-header.trade-complete {
+  background-image: linear-gradient(273deg, var(--dark-indigo), var(--tealish));
+}
+
+.trade-widget-titles {
+  justify-content: space-between;
+}
+
+.trade-widget-titles > div {
+  width: 100%;
+}
+
+.trade-widget-titles h3 {
+  font-weight: 300;
+  font-size: 36px;
+  color: var(--whitish);
+  text-transform: uppercase;
+}
+
+.trade-widget-titles .left {
+  text-align: left;
+}
+
+.trade-widget-titles .right {
+  text-align: right;
+}
+
+.trade-widget-header .micro-titles h3 {
+  text-transform: uppercase;
+  color: var(--whitish);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.trade-widget-header .micro-titles {
+  display: none;
+}
+
+.trade-widget-header .trade-metadata {
+  display: none;
+  text-align: center;
+  margin-bottom: 65px;
+  color: var(--whitish);
+}
+
+.trade-metadata .timestamp {
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trade-metadata .morph-id {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 2.6px;
+  color: #ffffff;
+}
+/* locked styles */
+
+.locked .trade-widget-header {
+  padding-top: 30px;
+}
+
+.locked .trade-widget-header .micro-titles {
+  display: flex;
+}
+
+.locked .trade-widget-header .trade-widget-titles {
+  display: none;
+}
+
+.locked .trade-widget-header .trade-metadata {
+  display: block;
+}
+
+
+/* >= mobile */
+
+@media (min-width: 581px) {
+  .trade-widget-header .trade-tracker {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+  }  
+}
+
+/* <= tablet */
+@media (max-width: 862px) {
+  .trade-widget-header {
+    padding: 43px 6.2%;
+  }
+  .trade-widget-titles h3 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+/* <= mobile */
+
+@media (max-width: 580px) {
+  .trade-widget-header {
+    padding-bottom: 6px;
+  }
+
+  .trade-widget-header .kebob {
+    margin-bottom: 24px;
+  }
+
+  .trade-widget-titles {
+    margin-top: 24px;
+    justify-content: space-between;
+  }
+
+  .trade-widget-titles h3 {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 4px;
+  }
+}
